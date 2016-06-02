@@ -1,0 +1,14 @@
+<header>
+  <div class="banner">
+    <center><img border="0" src="images/logo.jpg" width="1000"></center>
+  </div>
+  <ul class="nav" role="navigation">
+    <li><a <% if (page === 'index') { %>class="active" <% } %> href="/index"><img id="house" src="images/home.png"></a></li>
+    <li><a <% if (page === 'opportunity') { %>class="active" <% } %> href="/opportunity">Opportunity</a></li>
+    <li><a <% if (page === 'success-stories') { %>class="active" <% } %> href="/success-stories">Success Stories</a></li>
+    <li><a <% if (page === 'news') { %>class="active" <% } %> href="/news">News</a></li>
+    <li><a <% if (page === 'training-events') { %>class="active" <% } %> href="/training-events">Events</a></li>
+    <li id="nav_right"><a <% if (page === 'login') { %>class="active" <% } %> href="/login">IBO Login</a></li>
+    <li id="nav_right"><a <% if (page === 'contact') { %>class="active" <% } %> href="/contact.html">Contact</a></li>
+  </ul>
+</header>
