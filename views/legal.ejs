@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head><% include partials/template/head.ejs %></head>
-  <body>
-    <div class="content">
-	<div class="foot">
-    <center><h1><%= title %></h1></center>
-    <p>Last updated: January 11, 2016</p>
-    <% if (page == 'terms') { %>
-      <% include partials/content/terms.ejs %>
-    <% } else if (page == 'privacy') { %>
-    <% include partials/content/privacy.ejs %>
-    <% } %>
-    <center>&copy; 2016 AmeriSHOWZ</center>
-  </div><!-- foot -->
-</div><!-- content -->
-  </body>
+<head><% include partials/template/head.ejs %></head>
+<body>
+  <div class="content">
+    <div class="foot">
+      <center><h1><%= title %></h1></center>
+      <p>Last updated: January 11, 2016</p>
+      <% if (page == 'terms') { %>
+        <% include partials/content/terms.ejs %>
+      <% } else if (page == 'privacy') { %>
+        <% include partials/content/privacy.ejs %>
+      <% } %>
+      <center>&copy; 2016 AmeriSHOWZ</center>
+    </div><!-- foot -->
+  </div><!-- content -->
+</body>
 </html>

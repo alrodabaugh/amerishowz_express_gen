@@ -5,7 +5,18 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', {
     title: 'AmeriSHOWZ',
-    page: 'index'
+    page: 'index',
+    right: 'partials/content/mailchimp.ejs',
+    left: 'partials/content/about.ejs'
+  });
+});
+
+router.get('/opportunity', function(req, res, next) {
+  res.render('index', {
+    title: 'Opportunity',
+    page: 'opportunity',
+    right: 'partials/content/discover.ejs',
+    left: 'partials/content/sayyes.ejs'
   });
 });
 

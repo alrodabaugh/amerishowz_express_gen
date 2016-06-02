@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head><% include partials/template/head.ejs %></head>
-  <body>
-    <% include partials/template/header.ejs %>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <% include partials/template/footer.ejs %>
-  </body>
+<head><% include partials/template/head.ejs %></head>
+<body>
+  <% include partials/template/header.ejs %>
+    <div class="content">
+      <%- include(right) %>
+      <%- include(left) %>
+      <div style="clear: both;"></div>
+    </div>
+  <% include partials/template/footer.ejs %>
+</body>
 </html>
