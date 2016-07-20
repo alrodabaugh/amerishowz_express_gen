@@ -20,6 +20,17 @@ router.get('/opportunity', function(req, res, next) {
   });
 });
 
+router.get('/success-stories', function(req, res, next) {
+  var chAmps = [];
+  chAmps = appdata.champs;
+
+  res.render('lists', {
+    title: 'Success Stories',
+    page: 'success-stories',
+    champions: chAmps
+  });
+});
+
 router.get('/terms', function(req, res, next){
   res.render('legal', {
     title: 'Terms and Conditions ("Terms")',
