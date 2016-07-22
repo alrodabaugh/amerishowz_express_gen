@@ -1,0 +1,21 @@
+<% var yt = new Date(); %>
+<% var nt = new Date(); %>
+<% yt.setDate(yt.getDate() - 1); %>
+<% nt.setDate(nt.getDate() + 1); %>
+<% var yday = yt.getDate(); %>
+<% var nday = nt.getDate(); %>
+<% var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]; %>
+<% var ywd = weekday[yt.getDay()]; %>
+<% var nwd = weekday[nt.getDay()]; %>
+<% var n = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; %>
+<% var ymonth = n[yt.getMonth()]; %>
+<% var nmonth = n[nt.getMonth()]; %>
+<% var yyear = yt.getFullYear(); %>
+<% var nyear = nt.getFullYear(); %>
+
+<center>
+    <div id="log_main">
+			We are currently performing scheduled maintenance on our Independent Box Office servers from <p><%= ywd %>, <%= ymonth %> <%= yday %>, <%= yyear %> at 03:00 EST until <%= nwd %>, <%= nmonth%> <%= nday %>, <%= nyear %> at 22:00 EST</p>
+			<p>We apologize for the inconvenience. Please do not hesitate to <a href="/contact">contact</a> us.</p>
+		</div>
+  </center>

@@ -7,8 +7,8 @@ router.get('/', function(req, res, next) {
   res.render('index', {
     title: 'AmeriSHOWZ',
     page: 'index',
-    right: 'partials/content/mailchimp.ejs',
-    left: 'partials/content/about.ejs'
+    one: 'partials/content/mailchimp.ejs',
+    two: 'partials/content/about.ejs'
   });
 });
 
@@ -16,8 +16,8 @@ router.get('/opportunity', function(req, res, next) {
   res.render('index', {
     title: 'Opportunity',
     page: 'opportunity',
-    right: 'partials/content/discover.ejs',
-    left: 'partials/content/sayyes.ejs'
+    one: 'partials/content/discover.ejs',
+    two: 'partials/content/sayyes.ejs'
   });
 });
 
@@ -25,11 +25,11 @@ router.get('/success-stories', function(req, res, next) {
   var chAmps = [];
   chAmps = appdata.champs;
 
-  res.render('lists', {
+  res.render('index', {
     title: 'Success Stories',
     page: 'success-stories',
-    top: 'partials/content/champtop.ejs',
-    bottom: 'partials/content/champs.ejs',
+    one: 'partials/content/champtop.ejs',
+    two: 'partials/content/champs.ejs',
     champions: chAmps
   });
 });
@@ -38,12 +38,36 @@ router.get('/training-events', function(req, res, next) {
   var evEnts = [];
   evEnts = appdata.events;
 
-  res.render('lists', {
+  res.render('index', {
     title: 'Training Events',
     page: 'training-events',
-    top: 'partials/content/eventstop.ejs',
-    bottom: 'partials/content/events.ejs',
+    one: 'partials/content/eventstop.ejs',
+    two: 'partials/content/events.ejs',
     events: evEnts
+  });
+});
+
+router.get('/news', function(req, res, next) {
+  res.render('single', {
+    title: 'News',
+    page: 'news',
+    one: 'partials/content/news.ejs'
+  });
+});
+
+router.get('/contact', function(req, res, next) {
+  res.render('single', {
+    title: 'Contact',
+    page: 'contact',
+    one: 'partials/content/contact.ejs'
+  });
+});
+
+router.get('/login', function(req, res, next){
+  res.render('single', {
+    title: 'IBO Login',
+    page: 'login',
+    one: 'partials/content/login.ejs'
   });
 });
 
