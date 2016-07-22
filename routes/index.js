@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var appdata = require('../data.json');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -27,7 +28,22 @@ router.get('/success-stories', function(req, res, next) {
   res.render('lists', {
     title: 'Success Stories',
     page: 'success-stories',
+    top: 'partials/content/champtop.ejs',
+    bottom: 'partials/content/champs.ejs',
     champions: chAmps
+  });
+});
+
+router.get('/training-events', function(req, res, next) {
+  var evEnts = [];
+  evEnts = appdata.events;
+
+  res.render('lists', {
+    title: 'Training Events',
+    page: 'training-events',
+    top: 'partials/content/eventstop.ejs',
+    bottom: 'partials/content/events.ejs',
+    events: evEnts
   });
 });
 

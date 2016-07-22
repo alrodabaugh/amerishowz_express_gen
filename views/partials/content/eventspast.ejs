@@ -1,0 +1,22 @@
+<div id="ev_upcoming">
+  <font size="6">Past Training Events:</font>
+  <hr>
+  <% events.forEach(function(item) { %>
+  <div class="container">
+    <div class="ev_up_words">
+    <%- item.descrip %>
+    </div>
+    <div class="ev_up_list">
+      <font size="5"><%= item.where %></font></br>
+      <font size="4"><%= item.with %></br>
+        <p></p>
+        <%= item.when %></font></br>
+        <img src="images/events/event <%= item.pic %>.jpg"></br>
+        <a target="_blank" href="<%= item.links[0] %>">Register Online</a><br>
+        <a target="_blank" href="<%= item.links[1] %>">Book Hotel</a><br>
+        <a target="_blank" href="<%= item.links[2] %>">Book Flight</a>
+      </div>
+    </div>
+    <hr>
+    <% }); %>
+  </div>

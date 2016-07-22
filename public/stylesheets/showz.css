@@ -222,14 +222,15 @@ body {
 
 .ev_up_list {
 	margin-top: 25px;
-	width: 600px;
+	width: 48%;
+	float: left;
 }
 
 .ev_up_list img {
 	border-radius: 25px;
 	vertical-align: middle;
 	margin-top: 10px;
-	width: 500px;
+	width: 100%;
 	margin-bottom: 10px;
 }
 
@@ -238,7 +239,7 @@ body {
 	margin-bottom: 10px;
 	padding: 25px 25px 25px 25px;
 	overflow: scroll;
-	width: 400px;
+	width: 44%;
 	border-style: inset;
 	border-collapse: blue;
 	float: right;
@@ -264,7 +265,6 @@ hr {
 	height: 350px;
 	border-radius: 50%;
 	margin-top: 75px;
-	margin-right: 88px;
 	float: right;
 }
 
@@ -284,6 +284,7 @@ hr {
 	padding: 25px 25px 25px 25px;
 	margin-top: 25px;
 }
+
 
 .succ_pic_l {
 	background: orange;
@@ -309,7 +310,14 @@ hr {
 	border-radius: 25px;
 	padding: 25px 25px 25px 25px;
 	margin-top: 25px;
+	text-align:right;
 	float: right;
+}
+
+.wrapper {
+	width: 650px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 
@@ -319,8 +327,8 @@ hr {
 	font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
 	background-color: orange;
 	border-radius:25px;
-	padding: 25px 25px 25px 25px;
+	padding: 2% 2% 2% 2%;
 	overflow: scroll;
-	width: 1000px;
+	width: 94%;
 	margin-top: 30px;
 }

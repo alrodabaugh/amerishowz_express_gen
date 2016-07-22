@@ -1,3 +1,12 @@
-<div class="content">
-  <% champions.forEach(function(item))
+<div class="wrapper">
+<% champions.forEach(function(item) { %>
+<div class="succ_pic_r">
+  <img src="<%= item.propic %>">
+</div>
+<div class="succ_bio_l">
+  <%- item.testie %>
+  <font siz="4"><%= item.name %>, CIRCLE OF CHAMPIONS MEMBER</font>
+</div>
+  <div style="clear: both;"></div>
+<% }); %>
 </div>
