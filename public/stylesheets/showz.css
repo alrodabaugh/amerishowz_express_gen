@@ -45,15 +45,14 @@ body.submit {
 	border-right: 1px solid #bbb;
 }
 
-.active
-{
+.nav li a.active {
 	color: orange;
 	background-color: midnightblue;
 }
 
-.active_submit
-{
-	background-color: white;
+.nav_submit li a.active_submit {
+	color: white;
+	background-color: black;
 }
 
 .nav li, .nav_submit li {
