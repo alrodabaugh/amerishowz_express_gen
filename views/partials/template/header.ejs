@@ -1,13 +1,19 @@
 <header>
+  <% if (page === 'submit') { %>
+  <% var colors = "_submit"; %>
+<% } else { %>
+  <% var colors = ""; %>
+<% } %>
   <div class="banner">
-    <center><img border="0" src="images/logo.jpg" width="100%"></center>
+    <center><img src="images/logo.jpg" width="100%"></center>
   </div>
-  <ul class="nav" role="navigation">
-    <li><a <% if (page === 'index') { %>class="active" <% } %> href="/"><img id="house" src="images/home.png"></a></li>
+  <ul class="nav<%= colors %>" role="navigation">
+    <li><a <% if (page === 'index') { %>class="active" <% } %> href="/"><img id="house<%= colors %>" src="images/home<%= colors %>.png"></a></li>
     <li><a <% if (page === 'opportunity') { %>class="active" <% } %> href="/opportunity">Opportunity</a></li>
     <li><a <% if (page === 'success-stories') { %>class="active" <% } %> href="/success-stories">Success Stories</a></li>
     <li><a <% if (page === 'news') { %>class="active" <% } %> href="/news">News</a></li>
     <li><a <% if (page === 'training-events') { %>class="active" <% } %> href="/training-events">Events</a></li>
+    <li><a <% if (page === 'submit') { %>class="active_submit" <% } %> href="/submit">SUBMIT&trade;</a></li>
     <li id="nav_right"><a <% if (page === 'login') { %>class="active" <% } %> href="/login">IBO Login</a></li>
     <li id="nav_right"><a <% if (page === 'contact') { %>class="active" <% } %> href="/contact">Contact</a></li>
   </ul>

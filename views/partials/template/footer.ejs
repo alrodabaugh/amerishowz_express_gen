@@ -1,5 +1,10 @@
 <footer>
-	<div class="foot">
+	<% if (page === 'submit') { %>
+	<% var colors = "_submit"; %>
+<% } else { %>
+	<% var colors = ""; %>
+<% } %>
+	<div class="foot<%= colors %>">
 		<center><a target="_blank" href="/terms">Terms & Conditions</a> | <a target="_blank" href="/privacy">Privacy Policy</a> | &copy; 2016 AmeriSHOWZ</center>
 	</div>
 </footer>
