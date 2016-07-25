@@ -4,8 +4,8 @@
 <% } else { %>
   <% var colors = ""; %>
 <% } %>
-  <div class="banner">
-    <center><img src="images/logo.jpg" width="100%"></center>
+  <div class="banner<%= colors %>">
+    <center><img src="images/logo<%= colors %>.jpg" width="100%"></center>
   </div>
   <ul class="nav<%= colors %>" role="navigation">
     <li><a <% if (page === 'index') { %>class="active" <% } %> href="/"><img id="house<%= colors %>" src="images/home<%= colors %>.png"></a></li>

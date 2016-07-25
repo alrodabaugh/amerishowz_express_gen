@@ -7,7 +7,7 @@ body {
 body.submit {
 	background-color: black;
 	width: 100%;
-	min-width: 800px;
+	min-width: 804px;
 }
 
 .content {
@@ -26,11 +26,12 @@ body.submit {
 }
 
 .nav_submit {
-	border-radius:25px;
 	list-style-type: none;
 	margin-top: 30px;
 	padding: 0;
-	font:14px 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+	font-family: avenir;
+	font: 14px;
+	font-weight: bold;
 	overflow: hidden;
 	background-color: white;
 }
@@ -61,8 +62,19 @@ body.submit {
 }
 
 .nav li:nth-child(6) a {
+	height: 44px;
 	color: black;
 	background-color: white;
+	border: 3px solid black;
+	border-color: black;
+-moz-box-sizing:    border-box;
+-webkit-box-sizing: border-box;
+box-sizing:         border-box;
+}
+
+.nav li:nth-child(6) a:hover {
+	color: white;
+	background-color: black;
 }
 
 #house {
@@ -71,7 +83,7 @@ body.submit {
 }
 
 #house_submit {
-	height: 34px;
+	height: 37px;
 }
 
 .nav li a img:hover{
@@ -126,6 +138,15 @@ body.submit {
 	margin-right:20px;
 }
 
+.banner_submit {
+	background-color: white;
+	padding: 25px 25px 25px 25px;
+	margin-bottom: 10px;
+	margin-top: 30px;
+	margin-left:20px;
+	margin-right:20px;
+}
+
 
 .foot {
 	clear: both;
@@ -141,11 +162,12 @@ body.submit {
 .foot_submit {
 	clear: both;
 	color: black;
-	border-radius:25px;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	padding: 10px 10px 10px 10px;
-	font: 14px 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+	font: 14px;
+	font-weight: bold;
+	font-family: avenir;
 	background-color: white;
 }
 
@@ -361,4 +383,14 @@ hr {
 	overflow: scroll;
 	width: 94%;
 	margin-top: 30px;
+}
+
+.submitwords {
+	margin: 200px; 0px;
+	background-color: white;
+	padding: 25px;
+	width: 50%;
+	font-family: avenir;
+	font: 14px;
+	font-weight: bold;
 }
