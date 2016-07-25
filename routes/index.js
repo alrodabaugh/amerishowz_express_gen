@@ -55,6 +55,14 @@ router.get('/news', function(req, res, next) {
   });
 });
 
+router.get('/submit', function(req, res, next) {
+  res.render('submit', {
+    title: 'SUBMIT&trade;',
+    page: 'submit',
+    one: 'partials/content/submitpage.ejs'
+  });
+});
+
 router.get('/contact', function(req, res, next) {
   res.render('single', {
     title: 'Contact',
