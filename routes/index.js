@@ -93,4 +93,9 @@ router.get('/privacy', function(req, res, next){
   });
 });
 
+router.get('/robots.txt', function (req, res) {
+    res.type('text/plain');
+    res.send("User-agent: *\nDisallow: /images/circle/john.jpg");
+});
+
 module.exports = router;
