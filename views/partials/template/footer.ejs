@@ -1,10 +1,12 @@
 <footer>
 	<% if (page === 'submit') { %>
 	<% var colors = "_submit"; %>
+	<% } else if (page === 'ttlaccess') { %>
+		<% var colors = "_ttla"; %>
 <% } else { %>
 	<% var colors = ""; %>
 <% } %>
 	<div class="foot<%= colors %>">
-		<center><a target="_blank" href="/terms">Terms & Conditions</a> | <a target="_blank" href="/privacy">Privacy Policy</a> | &copy; 2016 AmeriSHOWZ</center>
+		<center><a target="_blank" href="/terms">Terms & Conditions</a> | <a target="_blank" href="/privacy">Privacy Policy</a> | &copy; 2018 AmeriSHOWZ</center>
 	</div>
 </footer>

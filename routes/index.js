@@ -4,11 +4,17 @@ var appdata = require('../data.json');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', {
+  res.render('splash', {
     title: 'AmeriSHOWZ',
-    page: 'index',
-    one: 'partials/content/mailchimp.ejs',
-    two: 'partials/content/about.ejs'
+    page: 'index'
+  });
+});
+
+router.get('/home', function(req, res, next) {
+  res.render('single', {
+    title: 'AmeriSHOWZ',
+    page: 'home',
+    one: 'partials/content/about.ejs'
   });
 });
 
@@ -58,8 +64,14 @@ router.get('/news', function(req, res, next) {
 router.get('/submit', function(req, res, next) {
   res.render('submit', {
     title: 'SUBMIT&trade;',
-    page: 'submit',
-    one: 'partials/content/submitpage.ejs'
+    page: 'submit'
+  });
+});
+
+router.get('/ttlaccess', function(req, res, next) {
+  res.render('ttlaccess', {
+    title: 'TTLAccess',
+    page: 'ttlaccess'
   });
 });
 
