@@ -133,7 +133,7 @@ a {
 	background-color: midnightblue;
 }
 
-.nav li:nth-child(2) a {
+.nav > li:nth-child(2) a {
 	height: 44px;
 	color: black;
 	background-color: white;
@@ -145,12 +145,12 @@ a {
 	box-sizing: border-box;
 }
 
-.nav li:nth-child(2) a:hover {
+.nav > li:nth-child(2) a:hover {
 	color: white;
 	background-color: black;
 }
 
-.nav li:nth-child(3) a {
+.nav > li:nth-child(3) a {
 	height: 44px;
 	background-color: black;
 	border: 3px solid gold;
@@ -158,12 +158,12 @@ a {
 	box-sizing: border-box;
 }
 
-.nav li:nth-child(3) a:hover {
+.nav > li:nth-child(3) a:hover {
 	color: black;
 	background-color: white;
 }
 
-.nav li:nth-child(3) a img:hover {
+.nav > li:nth-child(3) a img:hover {
 	color: black;
 	background-color: white;
 }
@@ -242,7 +242,7 @@ a {
 	background-color: black;
 }
 
-.nav_submit li:first-child a{
+.nav_submit > li:first-child a{
 	display: block;
 	color: black;
 	text-align: center;
@@ -255,7 +255,7 @@ a {
 	background-color: black;
 }
 
-.nav_submit li:nth-child(3) a {
+.nav_submit > li:nth-child(3) a {
 	height: 47px;
 	border: 3px solid gold;
 	padding: 12px 16px;
@@ -271,6 +271,9 @@ a {
 	overflow: hidden;
 	background-image: url('../images/goldnav.jpg');
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-repeat: no-repeat;
 }
 
@@ -287,11 +290,11 @@ a {
 	background-color: black;
 }
 
-.nav_ttla li:nth-child(1) a {
+.nav_ttla > li:nth-child(1) a {
 	padding: 8px 3px 0px 3px;
 }
 
-.nav_ttla li:nth-child(2) a {
+.nav_ttla > li:nth-child(2) a {
 	height: 46px;
 	color: black;
 	background-color: white;
@@ -348,6 +351,9 @@ a {
 	overflow: hidden;
 	background-image: url('../images/goldnav.jpg');
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-repeat: no-repeat;
 }
 
@@ -678,6 +684,9 @@ div.submitwords{
 	font-weight: bold;
 	background-image: url('../images/goldnav.jpg');
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-repeat: no-repeat;
 }
 
@@ -1057,6 +1066,7 @@ div.submitwords{
 		border: none;
 		color: midnightblue;
 		padding: 14px 16px;
+		font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
 	}
 
 	#nav_right a:hover{
@@ -1093,6 +1103,10 @@ div.submitwords{
 
 	.nav li:nth-child(2) a {
 		padding: 10px 8px;
+	}
+
+	.nav li#nav_right:nth-child(2) a {
+		font-family:14px 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif !important;
 	}
 
 	.nav li:nth-child(3) a {
@@ -1153,10 +1167,16 @@ div.submitwords{
 
 	.submit {
 		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
 	}
 
 	.bodyaccess {
 		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
 		background-position: right center;
 	}
 
