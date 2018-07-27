@@ -1,21 +1,40 @@
 <header>
   <% if (page === 'submit') { %>
-  <% var colors = "_submit"; %>
-<% } else if (page === 'ttlaccess') { %>
-  <% var colors = "_ttla"; %>
-  <% } else { %>
-  <% var colors = ""; %>
-<% } %>
-  <div class="banner<%= colors %>">
-    <center><img src="images/logo<%= colors %><% if (page === 'ttlaccess') { %>.png" <% } else { %>.jpg" <% } %> width="100%"></center>
-  </div>
-  <ul class="nav<%= colors %>" role="navigation">
-    <li><a <% if (page === 'home') { %>class="active" <% } %> href="/home"><img id="house<%= colors %>" src="images/home<%= colors %><% if (page === 'ttlaccess') { %>.gif"<% } else { %>.png"<% } %>></a></li>
-    <li><a <% if (page === 'submit') { %>class="active_submit" <% } %> href="/submit">SUBMIT&trade;</a></li>
-    <li><a <% if (page === 'ttlaccess') { %>class="active_ttla" <% } %> href="/ttlaccess"><img src="../../../images/acc.png" height="13px"></a></li>
-    <li id="nav_right"><a <% if (page === 'login') { %>class="active" <% } %> href="/login">IBO Login</a></li>
-    <li id="nav_right"><a <% if (page === 'contact') { %>class="active" <% } %> href="/contact">Contact</a></li>
-    <li id="nav_right"><a <% if (page === 'training-events') { %>class="active" <% } %> href="/training-events">Events</a></li>
-    <li id="nav_right"><a <% if (page === 'success-stories') { %>class="active" <% } %> href="/success-stories">2017 Circle of Champions</a></li>
-  </ul>
-</header>
+    <% var colors = "_submit"; %>
+    <% } else if (page === 'ttlaccess') { %>
+      <% var colors = "_ttla"; %>
+      <% } else { %>
+        <% var colors = ""; %>
+        <% } %>
+        <div class="banner<%= colors %>">
+          <center><img src="images/logo<%= colors %><% if (page === 'ttlaccess') { %>.png" <% } else { %>.jpg" <% } %> width="100%"></center>
+        </div>
+        <div id="navwrap">
+          <ul class="nav<%= colors %>" role="navigation">
+            <li><a <% if (page === 'home') { %>class="active" <% } %> href="/home"><img id="house<%= colors %>" src="images/home<%= colors %><% if (page === 'ttlaccess') { %>.gif"<% } else { %>.png"<% } %>></a></li>
+            <li><a <% if (page === 'submit') { %>class="active_submit" <% } %> href="/submit">SUBMIT&trade;</a></li>
+            <li><a <% if (page === 'ttlaccess') { %>class="active_ttla" <% } %> href="/ttlaccess"><img src="../../../images/acc.png" height="13px"></a></li>
+            <li id="more_nav"><a href="#">More</a>
+              <li id="nav_right"><a <% if (page === 'login') { %>class="active" <% } %> href="/login">IBO Login</a></li>
+              <li id="nav_right"><a <% if (page === 'contact') { %>class="active" <% } %> href="/contact">Contact</a></li>
+              <li id="nav_right"><a <% if (page === 'training-events') { %>class="active" <% } %> href="/training-events">Events</a></li>
+              <li id="nav_right"><a <% if (page === 'success-stories') { %>class="active" <% } %> href="/success-stories">2017 Circle of Champions</a></li>
+            </ul>
+          </div>
+          <div id="more_nav_menu">
+            <ul class="nav<%= colors %>" role="navigation">
+              <li><a <% if (page === 'home') { %>class="active" <% } %> href="/home"><img id="house<%= colors %>" src="images/home<%= colors %><% if (page === 'ttlaccess') { %>.gif"<% } else { %>.png"<% } %>></a></li>
+              <li><a <% if (page === 'submit') { %>class="active_submit" <% } %> href="/submit">SUBMIT&trade;</a></li>
+              <li><a <% if (page === 'ttlaccess') { %>class="active_ttla" <% } %> href="/ttlaccess"><img src="../../../images/acc.png" height="13px"></a></li>
+              <li id="more_nav"><a href="#">More</a>
+                <div class="more_right">
+                  <ul>
+                    <li id="nav_right"><a <% if (page === 'success-stories') { %>class="active" <% } %> href="/success-stories">2017 Circle of Champions</a></li>
+                    <li id="nav_right"><a <% if (page === 'training-events') { %>class="active" <% } %> href="/training-events">Events</a></li>
+                    <li id="nav_right"><a <% if (page === 'contact') { %>class="active" <% } %> href="/contact">Contact</a></li>
+                  <li id="nav_right"><a <% if (page === 'login') { %>class="active" <% } %> href="/login">IBO Login</a></li>
+                </ul>
+              </div>
+              </ul>
+            </div>
+          </header>
